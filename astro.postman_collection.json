@@ -1,0 +1,770 @@
+{
+	"info": {
+		"_postman_id": "35befb1a-e30a-4fdc-8035-7d158865c8d2",
+		"name": "astro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/user/userLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "rahul@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/userLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"userLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/course/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/course/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"course",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/course/getAllUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5000/course/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"course",
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/course/addNewCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "courseName",
+							"value": "Astro Basic 1",
+							"type": "default"
+						},
+						{
+							"key": "courseFees",
+							"value": "15000",
+							"type": "default"
+						},
+						{
+							"key": "courseTime",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "courseType",
+							"value": "Year",
+							"type": "default"
+						},
+						{
+							"key": "courseDescription",
+							"value": "Course Description",
+							"type": "default"
+						},
+						{
+							"key": "courseIFrames",
+							"value": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/avEkgSaOItA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>,<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/3Vl_wWAnEtM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/course/addNewCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"course",
+						"addNewCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/course/editCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "courseId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "courseName",
+							"value": "Astro Basic -----",
+							"type": "text"
+						},
+						{
+							"key": "courseFees",
+							"value": "15000",
+							"type": "text"
+						},
+						{
+							"key": "courseTime",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "courseType",
+							"value": "Year",
+							"type": "text"
+						},
+						{
+							"key": "courseDescription",
+							"value": "Course Description",
+							"type": "text"
+						},
+						{
+							"key": "courseIFrames",
+							"value": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/avEkgSaOItA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>,<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/3Vl_wWAnEtM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/course/editCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"course",
+						"editCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/course/deleteCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "courseId",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/course/deleteCourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"course",
+						"deleteCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/changePassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "newPassword",
+							"value": "123456",
+							"type": "default"
+						},
+						{
+							"key": "repeatPassword",
+							"value": "123456",
+							"type": "default"
+						},
+						{
+							"key": "currentPassword",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/changePassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/course/getAllPurchasedCourse",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userid",
+						"value": "2",
+						"type": "default"
+					},
+					{
+						"key": "token",
+						"value": "0d7764ae-4438-4206-8235-523d9788a988",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/course/getAllPurchasedCourse",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"course",
+						"getAllPurchasedCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/course/getAllPaymentHistory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/course/getAllPaymentHistory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"course",
+						"getAllPaymentHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/loginWithMobile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "8739998007",
+							"type": "default"
+						},
+						{
+							"key": "otp",
+							"value": "000000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/user/loginWithMobile",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"loginWithMobile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/verifyOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "8739998007",
+							"type": "default"
+						},
+						{
+							"key": "otp",
+							"value": "000000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/user/verifyOtp",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"verifyOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/sendOtp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mobileNo",
+							"value": "8739998007",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/user/sendOtp",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"sendOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Rahul",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "rahul@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "9876543210",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/user/register",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/course/getAllCourses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/course/getAllCourses",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"course",
+						"getAllCourses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/getUserProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userid",
+						"value": "2",
+						"type": "default"
+					},
+					{
+						"key": "token",
+						"value": "0d7764ae-4438-4206-8235-523d9788a988",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/user/getUserProfile",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"getUserProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/editUserProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userid",
+						"value": "2",
+						"type": "default"
+					},
+					{
+						"key": "token",
+						"value": "0d7764ae-4438-4206-8235-523d9788a988",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Rahul Jangid",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "Rahul@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "phone",
+							"value": "9876543210",
+							"type": "default"
+						},
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/user/editUserProfile",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"editUserProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/getUserCourse",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "0d7764ae-4438-4206-8235-523d9788a988",
+						"type": "default"
+					},
+					{
+						"key": "userId",
+						"value": "2",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/user/getUserCourse",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"getUserCourse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/user/addCoursePayemnt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userid",
+						"value": "2",
+						"type": "default"
+					},
+					{
+						"key": "token",
+						"value": "0d7764ae-4438-4206-8235-523d9788a988",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "courseId",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "PayPalPaymentId",
+							"value": "ehfjhUGK13Hggh444uhfkfJKG",
+							"type": "default"
+						},
+						{
+							"key": "paymentStatus",
+							"value": "Completed",
+							"type": "default"
+						},
+						{
+							"key": "expDate",
+							"value": "2024-01-20",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://167.71.232.253:5000/user/addCoursePayemnt",
+					"protocol": "https",
+					"host": [
+						"167",
+						"71",
+						"232",
+						"253"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"addCoursePayemnt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
