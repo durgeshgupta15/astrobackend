@@ -8,12 +8,18 @@ const cookieParser = require('cookie-parser');
 var app = express();
 dotenv.config({ path: './config.env' });
 const sequelize = require('./db/connection');
+const session = require('express-session');
+
+
+
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({ limit: '150mb' }));
 app.use(cors());
 app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use(session({ secret: 'my secret', resave: false, saveUninitialized: false }));
 
 const compression = require('compression');
 app.use(compression());
@@ -21,6 +27,7 @@ app.use(compression());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
 
 
 
@@ -39,6 +46,7 @@ app.use('/course', courseRoutes);
 app.use('/pdfdetail', pdfRouter);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/upload', uploadRouter);
+app.use('/api/youtube', youtubeVideoRouter);
 
 app.use(function (req, res, next) {
   // next(createError(404));
